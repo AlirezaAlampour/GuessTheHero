@@ -4,20 +4,24 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args){
+
         Run();
-//    System.out.print("Is your hero an Agility hero?");
     }
     public static void Run(){
-        Scanner sc = new Scanner(System.in);
         JOptionPane.showMessageDialog(null,"Think of a hero ...");
-        if(JOptionPane.showConfirmDialog(null,"Is your hero not an Intelligence or Strength hero?",null, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
+        if(option("Is your hero an Agility hero?")){
             Agility.Run();
         }
-        else if(JOptionPane.showConfirmDialog(null,"Is your hero a Strength hero?",null, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION){
+        else if(option("Is your hero a Strength hero?")){
 //            Strength.Run();
         }
         else {
             //Intelligence.Run();
         }
     }
+    public static boolean option(String input){
+        return JOptionPane.showConfirmDialog(null, input, null, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;
+    }
 }
+
+
