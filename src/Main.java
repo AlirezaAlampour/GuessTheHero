@@ -1,8 +1,8 @@
-
+import java.applet.*;
 import javax.swing.*;
 import java.util.*;
 
-public class Main implements MyInterface {
+public class Main extends Applet implements MyInterface {
     public static void main(String[] args){
         Run();
     }

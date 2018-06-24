@@ -1,6 +1,7 @@
 import javax.swing.*;
+import java.applet.*;
 
-public class Intelligence implements MyInterface {
+public class Intelligence extends Applet implements MyInterface {
 
     private static boolean option(String input){
         return JOptionPane.showConfirmDialog(null, input, null, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;

@@ -1,5 +1,7 @@
 import javax.swing.*;
-public class Agility implements MyInterface{
+import java.applet.*;
+
+public class Agility extends Applet implements MyInterface{
 
     private static boolean option(String input){
         return JOptionPane.showConfirmDialog(null, input, null, JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION;
