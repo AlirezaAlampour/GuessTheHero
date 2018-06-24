@@ -15,7 +15,7 @@ public class Main implements MyInterface {
             Strength.Run();
         }
         else {
-            //Intelligence.Run();
+            Intelligence.Run();
         }
     }
     private static boolean option(String input){

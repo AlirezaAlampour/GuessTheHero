@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.util.*;
 public class Agility implements MyInterface{
 
     private static boolean option(String input){
